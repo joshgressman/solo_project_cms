@@ -1,0 +1,64 @@
+<div id="addContainer">
+<div>
+  <ul class="nav">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#view">View Contacts</a></li>
+    <li><a href="#planner">Planner</a></li>
+  </ul>
+</div>
+
+<h2>Add New Contact</h2>
+<div ng-controller="addController">
+<form id ="addForm">
+    <input type="text" id="contactName" name="contactName" ng-model="newContact.contactName" placeholder=" New Contact Name" />
+    <input type="text" id="company" name="company" ng-model="newContact.company" placeholder=" Company Name" />
+    <input type="text" id="phone" name="phone" ng-model="newContact.phone" placeholder=" Phone Number" />
+    <input type="text" id="email" name="email" ng-model="newContact.email" placeholder=" Email" />
+</br>
+</br>
+  <input type="text" id="signMfg" name="signMfg" ng-model="newContact.signMfg" placeholder=" Sign Manufacturer" />
+  <input type="text" id="signSize" name="signSize" ng-model="newContact.signSize" placeholder=" Sign Size" />
+  <input type="text" id="signHold" name="signHold" ng-model="newContact.signHold" placeholder=" Hold Time" />
+  <input type="date" id="currentDate" name="currentDate" ng-model="newContact.currentDate" placeholder=" Current Date" />
+</br>
+</br>
+<select id ="contactDrop" name="contactType" ng-model="newContact.contactType">
+  <option value="">Contact Type</option>
+  <option value="client">Client</option>
+  <option value="prospect">Prospect</option>
+</select>
+<select id ="trialDrop" name="trialPeriod" ng-model="newContact.trialPeriod">
+  <option value="">Trail Type</option>
+  <option value="14 Day">Client</option>
+  <option value="30 Day">Prospect</option>
+  <option value="none">none</option>
+</select>
+<select id ="contractDrop" name="contract" ng-model="newContact.contract">
+  <option value="">Contract Type</option>
+  <option value="6 Month">6 Month</option>
+  <option value="12 Month">12 Month</option>
+  <option value="18 Month">18 Month</option>
+  <option value="24 Month">24 Month</option>
+  <option value="MTM">Month to Month</option>
+</select>
+<select id ="leadDrop" name="leadStatus" ng-model="newContact.leadStatus">
+  <option value="">Lead Status</option>
+  <option value="HOT">HOT</option>
+  <option value="WARM">WARM</option>
+  <option value="COLD">COLD</option>
+</select>
+</br>
+</br>
+<label for="trialExpiration">Trail Expiration:</label>
+<input type="date" id="expDate" name="trialExpiration" ng-model="newContact.trialExpiration" />
+<label for="projectedIncome">Projected Income:</label>
+<input type="number" id="projectedIncome" name="ProjectedIncome" ng-model="newContact.ProjectedIncome" />
+</br>
+<textarea id="textArea" name ="contactNotes" ng-model="newContact.contactNotes" placeholder="Notes"></textarea>
+</br>
+<button id="addbtn" ng-click="submitNewClient()">Add Contact</button>
+</form>
+
+
+</div>
+</div>

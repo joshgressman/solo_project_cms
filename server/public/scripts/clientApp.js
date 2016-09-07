@@ -9,11 +9,11 @@ myApp.config(['$routeProvider', function($routeProvider){
       controller: "homeController"
     })
     .when('/add', {
-      templateUrl: '/views/partials/register.html',
+      templateUrl: '/views/partials/addcontact.html',
       controller: "addController"
     })
     .when('/view', {
-      templateUrl: '/views/partials/user.html',
+      templateUrl: '/views/partials/viewcontacts.html',
       controller: "viewController"
     })
     .when('/planner', {

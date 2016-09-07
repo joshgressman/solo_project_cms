@@ -1,3 +1,46 @@
 body {
-  
-},
+background-color: gray;
+}
+
+.big {
+  background-color: green;
+  height: 200px;
+  width: 300px;
+}
+
+header {
+  height: 120px;
+  background-color: black;
+}
+
+#planner {
+  margin-left:730px;
+  margin-top: 40px;
+  background-color: blue;
+  height: 200px;
+  width: 300px;
+}
+
+.nav {
+  list-style-type: none;
+
+}
+
+.nav li {
+  display: inline;
+  float: left;
+}
+
+#textArea {
+  margin-top: 10px;
+  width: 630px;
+  height: 100px;
+}
+
+/*#addForm {
+  margin-left: 10px;
+}*/
+
+#addContainer {
+  margin-left: 10px;
+}
