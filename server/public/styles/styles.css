@@ -53,3 +53,20 @@ header {
 a{
   color: white;
 }
+
+#contactDiv {
+  border: solid white;
+  border-width: thin;
+  border-radius: 2px;
+  margin: 10px 0 6px 0;
+}
+
+#emailView {
+  width: 240px;
+}
+
+#notesView {
+  width: 1000px;
+  height: 100px;
+  margin-top: 15px;
+}

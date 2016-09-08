@@ -1,4 +1,5 @@
 myApp.controller('viewController', ['$scope', '$http', '$location', function($scope, $http, $location){
+console.log("viewController connected");
 $scope.contacts = []; // the array of clients
 console.log($scope.contacts);
 getContacts();
