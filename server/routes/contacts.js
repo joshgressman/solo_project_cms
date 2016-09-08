@@ -20,4 +20,17 @@ contact.save(function(err){
 
 });
 
+///****************GET CONTACTS**************************//////
+router.get('/', function(req, res){
+Contacts.find({}, function(err, contacts){
+  if(err){
+    res.sendStatus(500);
+    return;
+  }
+  res.send(contacts);
+});
+});
+
+
+
 module.exports = router;
