@@ -29,6 +29,11 @@ header {
 .nav li {
   display: inline;
   float: left;
+  border: solid white;
+  border-width: thin;
+  border-radius: 5px;
+  background-color: gray;
+
 }
 
 #textArea {
@@ -43,4 +48,8 @@ header {
 
 #addContainer {
   margin-left: 10px;
+}
+
+a{
+  color: white;
 }

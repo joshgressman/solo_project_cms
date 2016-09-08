@@ -26,11 +26,12 @@
   <option value="">Contact Type</option>
   <option value="client">Client</option>
   <option value="prospect">Prospect</option>
+  <option value="inactive">Inactive</option>
 </select>
 <select id ="trialDrop" name="trialPeriod" ng-model="newContact.trialPeriod">
-  <option value="">Trail Type</option>
-  <option value="14 Day">Client</option>
-  <option value="30 Day">Prospect</option>
+  <option value="">Trial Type</option>
+  <option value="14 Day">14 Day</option>
+  <option value="30 Day">30 Day</option>
   <option value="none">none</option>
 </select>
 <select id ="contractDrop" name="contract" ng-model="newContact.contract">
@@ -40,6 +41,7 @@
   <option value="18 Month">18 Month</option>
   <option value="24 Month">24 Month</option>
   <option value="MTM">Month to Month</option>
+  <option value="none">none</option>
 </select>
 <select id ="leadDrop" name="leadStatus" ng-model="newContact.leadStatus">
   <option value="">Lead Status</option>
@@ -56,7 +58,7 @@
 </br>
 <textarea id="textArea" name ="contactNotes" ng-model="newContact.contactNotes" placeholder="Notes"></textarea>
 </br>
-<button id="addbtn" ng-click="submitNewClient()">Add Contact</button>
+<button id="addbtn" ng-click="submitNewContact()">Add Contact</button>
 </form>
 
 
