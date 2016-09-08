@@ -31,6 +31,19 @@ Contacts.find({}, function(err, contacts){
 });
 });
 
+//////////*******************PUT /UPDATE Contacts on view **********/////
+router.put('/:id', function(req,res){
+  var contact = req.body;
+  var id = req.params.id;
+  console.log('id',req.params.id)
+  Contacts.findByIdAndUpdate(id,contact, function(err, contact){
+    if(err){
+      res.sendStatus(500);
+      return;
+    }
+    res.status(204).send(contact);
+  });
+});
 
 
 module.exports = router;
