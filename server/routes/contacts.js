@@ -34,6 +34,7 @@ Contacts.find({}, function(err, contacts){
 //////////*******************PUT /UPDATE Contacts on view **********/////
 router.put('/:id', function(req,res){
   var contact = req.body;
+  console.log('req.body', req.body);
   var id = req.params.id;
   console.log('id',req.params.id)
   Contacts.findByIdAndUpdate(id,contact, function(err, contact){
@@ -42,6 +43,18 @@ router.put('/:id', function(req,res){
       return;
     }
     res.status(204).send(contact);
+  });
+});
+
+///////////********************DELETE CONTACT ********************///////
+router.delete('/:id', function(req, res){
+  var id = req.params.id;
+  Contacts.findByIdAndRemove(id, function(err){
+    if(err){
+      res.sendStatus(500);
+      return;
+    }
+    res.sendStatus(204);
   });
 });
 

@@ -10,6 +10,10 @@
 <h2>Add New Contact</h2>
 <div ng-controller="addController">
 <form id ="addForm">
+  <label for="currentDate">Current Date:</label>
+  <input type="date" id="currentDate" name="currentDate" ng-model="newContact.currentDate" placeholder=" Current Date" />
+</br>
+</br>
     <input type="text" id="contactName" name="contactName" ng-model="newContact.contactName" placeholder=" New Contact Name" />
     <input type="text" id="company" name="company" ng-model="newContact.company" placeholder=" Company Name" />
     <input type="text" id="phone" name="phone" ng-model="newContact.phone" placeholder=" Phone Number" />
@@ -19,7 +23,7 @@
   <input type="text" id="signMfg" name="signMfg" ng-model="newContact.signMfg" placeholder=" Sign Manufacturer" />
   <input type="text" id="signSize" name="signSize" ng-model="newContact.signSize" placeholder=" Sign Size" />
   <input type="text" id="signHold" name="signHold" ng-model="newContact.signHold" placeholder=" Hold Time" />
-  <input type="date" id="currentDate" name="currentDate" ng-model="newContact.currentDate" placeholder=" Current Date" />
+  <input type="text" id="salesRep" name="salesRep" ng-model="newContact.salesRep" placeholder="Sales Team Member" />
 </br>
 </br>
 <select id ="contactDrop" name="contactType" ng-model="newContact.contactType">

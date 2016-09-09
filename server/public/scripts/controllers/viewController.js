@@ -22,6 +22,7 @@ $http.get('/contacts')
 //////////////*********UPDATE CONTACTS**************************///////
 $scope.updateContact = function (contact) {
   var id = contact._id;
+
   console.log('contact id', contact._id);
  $http.put('/contacts/' + id, contact)
  .then(function(){
@@ -30,6 +31,18 @@ $scope.updateContact = function (contact) {
  });
 };
 
+///***********************DELETE CONTACT*****************************/////
+$scope.deleteContact = function (contact) {
+  var confirmed = confirm("Are you sure you want to DELETE this contact?");
+  var id = contact._id;
+  if(confirmed === true){
+  $http.delete('/contacts/' + id)
+  .then(function(){
+    console.log('DELETE/contacts', id);
+    getContacts();
+  });
+};
+};
 
 
 

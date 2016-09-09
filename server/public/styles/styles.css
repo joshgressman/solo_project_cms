@@ -1,22 +1,24 @@
 body {
-background-color: gray;
+background-color: #F2F2F2;
 }
 
 .big {
-  background-color: green;
+  background-color: rgb(37,141,254);
   height: 200px;
   width: 300px;
+  color:white;
 }
 
 header {
   height: 120px;
-  background-color: black;
+  background-color: gray;
+  margin-bottom: 140px;
 }
 
 #planner {
   margin-left:730px;
   margin-top: 40px;
-  background-color: blue;
+  background-color: rgb(37,141,254);
   height: 200px;
   width: 300px;
 }
@@ -32,7 +34,8 @@ header {
   border: solid white;
   border-width: thin;
   border-radius: 5px;
-  background-color: gray;
+  background-color: rgb(37,141,254);
+  color:white;
 
 }
 
@@ -50,15 +53,14 @@ header {
   margin-left: 10px;
 }
 
-a{
-  color: white;
-}
+
 
 #contactDiv {
   border: solid white;
   border-width: thin;
   border-radius: 2px;
   margin: 10px 0 6px 0;
+  padding-bottom: 8px;
 }
 
 #emailView {
@@ -69,4 +71,17 @@ a{
   width: 1000px;
   height: 100px;
   margin-top: 15px;
+}
+
+.delete {
+  background-color:red;
+}
+
+#addbtn {
+  background-color: rgb(37,141,254);
+  color: white;
+}
+
+a{
+  color: white;
 }

@@ -17,6 +17,7 @@ var contactSchema = new Schema({
   contract: String,
   leadStatus: String,
   contactNotes: String,
+  salesRep:String,
   trialExpiration: {type: Date},
   ProjectedIncome: {type: Number},
   currentDate: {type: Date}
