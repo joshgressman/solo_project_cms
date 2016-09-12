@@ -19,7 +19,13 @@
       <div class="col-md-3"><label for="email">Email Address:</label>
       <input type="text" id="emailView" name="email" ng-model="contact.email" /></div>
       <div class="col-md-2"><label for="contactType">Contact Type:</label>
-      <input type="text" id="contactTypeView" name="contactType" ng-model="contact.contactType" /></div>
+      <!-- <input type="text" id="contactTypeView" name="contactType" ng-model="contact.contactType" /></div> -->
+      <select id ="contactDrop" name="contactType" ng-model="contact.contactType">
+        <option value="prospect">Prospect</option>
+        <option value="client">Client</option>
+        <option value="inactive">Inactive</option>
+      </select>
+    </div>
     </div>
     <div class="row">
     <div class="col-md-2"><label for="currentDate">Date Created:</label>
@@ -29,7 +35,7 @@
     <div class="col-md-2"><label for="trialPeriod">Trial Period:</label>
     <input type="text" id="trialPeriodView" name="trialPeriod" ng-model="contact.trialPeriod" /></div>
     <div class="col-md-3"><label for="trialExpiration">Trial Expiration:</label>
-    <input type="text" id="trialExpirationView" name="trialExpiration" ng-model="contact.trialExpiration" /></div>
+    <input type="date" id="trialExpirationView" name="trialExpiration" ng-model="contact.trialExpiration" /></div>
     <div class="col-md-2"><label for="contract">Contract:</label>
     <input type="text" id="contractView" name="contract" ng-model="contact.contract" /></div>
   </div>

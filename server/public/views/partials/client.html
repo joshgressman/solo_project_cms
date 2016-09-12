@@ -19,9 +19,15 @@
       <input type="text" id="phoneView" name="phone" ng-model="contact.phone" /></div>
       <div class="col-md-3"><label for="email">Email Address:</label>
       <input type="text" id="emailView" name="email" ng-model="contact.email" /></div>
-      <div class="col-md-2"><label for="contactType">Contact Type:</label>
-      <input type="text" id="contactTypeView" name="contactType" ng-model="contact.contactType" /></div>
+      <div class="col-md-3"><label for="contactType">Contact Type:</label>
+      <!-- <input type="text" id="contactTypeView" name="contactType" ng-model="contact.contactType" /></div> -->
+      <select id ="contactDrop" name="contactType" ng-model="contact.contactType">
+        <option value="client">Client</option>
+        <option value="prospect">Prospect</option>
+        <option value="inactive">Inactive</option>
+      </select>
     </div>
+  </div>
     <div class="row">
     <div class="col-md-2"><label for="currentDate">Date Created:</label>
     <input type="text" id="createdDateView" name="currentDate" ng-model="contact.currentDate" /></div>
@@ -48,8 +54,8 @@
     <div class ="row">
       <div class="col-md-1"></div>
       <div class="col-md-1"><button class="update" ng-click="updateContact(contact)">Update</button></div>
-      <!-- <div class="col-md-4"></div> -->
-      <div class="col-md-1"><button class="delete" ng-click="deleteContact(contact)">Delete</button></div>
+      <div class="col-md-4"></div>
+      <div class="col-md-1"><button class="delete" ng-click="deleteContact(contact)">Delete </button></div>
   </div>
 </form>
 

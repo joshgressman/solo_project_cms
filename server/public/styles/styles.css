@@ -63,14 +63,14 @@ header {
   border: solid gray;
   border-width: thin;
   border-radius: 2px;
-  margin: 10px 0 6px 0;
-  padding: 8px 0 8px 8px;
+  margin: 20px 0 6px 0;
+  padding: 12px 0 8px 8px;
   margin-left: 10px;
 
 }
 
 #emailView {
-  width: 240px;
+  width: 220px;
 }
 
 #notesView {
@@ -98,9 +98,7 @@ a{
   color: white;
 }
 
-#eventNote {
-  width: 400px;
-}
+
 
 #topBtn {
   margin-bottom: 10px;
