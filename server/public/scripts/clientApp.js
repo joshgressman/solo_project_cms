@@ -12,13 +12,17 @@ myApp.config(['$routeProvider', function($routeProvider){
       templateUrl: '/views/partials/addcontact.html',
       controller: "addController"
     })
-    .when('/view', {
-      templateUrl: '/views/partials/viewcontacts.html',
-      controller: "viewController"
+    .when('/client', {
+      templateUrl: '/views/partials/client.html',
+      controller: "clientController"
     })
-    .when('/planner', {
-      templateUrl: '/views/partials/planner.html',
-      controller: "plannerController"
+    .when('/prospect', {
+      templateUrl: '/views/partials/prospect.html',
+      controller: "prospectController"
+    })
+    .when('/inactive', {
+      templateUrl: '/views/partials/inactive.html',
+      controller: "inactiveController"
     })
     .otherwise({
       redirectTo: '/home'

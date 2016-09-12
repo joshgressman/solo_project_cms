@@ -1,11 +1,12 @@
 <div id="addContainer">
-<div>
-  <ul class="nav">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#view">View Contacts</a></li>
-    <li><a href="#planner">Planner</a></li>
-  </ul>
-</div>
+  <div>
+    <ul class="nav">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#client">Clients</a></li>
+      <li><a href="#prospect">Prospects</a></li>
+      <li><a href="#inactive">Inactive</a></li>
+    </ul>
+  </div>
 
 <h2>Add New Contact</h2>
 <div ng-controller="addController">
@@ -62,6 +63,7 @@
 </br>
 <textarea id="textArea" name ="contactNotes" ng-model="newContact.contactNotes" placeholder="Notes"></textarea>
 </br>
+
 <button id="addbtn" ng-click="submitNewContact()">Add Contact</button>
 </form>
 

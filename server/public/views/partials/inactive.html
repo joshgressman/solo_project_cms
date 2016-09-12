@@ -1,0 +1,57 @@
+<div>
+  <ul class="nav">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#add">Add Contacts</a></li>
+    <li><a href="#client">Clients</a></li>
+    <li><a href="#prospect">Prospects</a></li>
+  </ul>
+</div>
+
+<div ng-controller="inactiveController">
+  <div id = "contactDiv" ng-repeat="contact in formData.contacts">
+    <form name="contactform">
+      <div class="row">
+      <div class="col-md-2"><label for="contactName">Contact Name:</label>
+      <input type="text" id="contNameView" name="contactName" ng-model="contact.contactName" /></div>
+      <div class="col-md-2"><label for="company">Company:</label>
+      <input type="text" id="companyView" name="company" ng-model="contact.company" /></div>
+      <div class="col-md-2"><label for="phone">Phone Number:</label>
+      <input type="text" id="phoneView" name="phone" ng-model="contact.phone" /></div>
+      <div class="col-md-3"><label for="email">Email Address:</label>
+      <input type="text" id="emailView" name="email" ng-model="contact.email" /></div>
+      <div class="col-md-2"><label for="contactType">Contact Type:</label>
+      <input type="text" id="contactTypeView" name="contactType" ng-model="contact.contactType" /></div>
+    </div>
+    <div class="row">
+    <div class="col-md-2"><label for="currentDate">Date Created:</label>
+    <input type="text" id="createdDateView" name="currentDate" ng-model="contact.currentDate" /></div>
+    <div class="col-md-2"><label for="leadStatus">Lead Status:</label>
+    <input type="text" id="leadStatusView" name="leadStatus" ng-model="contact.leadStatus" /></div>
+    <div class="col-md-2"><label for="trialPeriod">Trial Period:</label>
+    <input type="text" id="trialPeriodView" name="trialPeriod" ng-model="contact.trialPeriod" /></div>
+    <div class="col-md-3"><label for="trialExpiration">Trial Expiration:</label>
+    <input type="text" id="trialExpirationView" name="trialExpiration" ng-model="contact.trialExpiration" /></div>
+    <div class="col-md-2"><label for="contract">Contract:</label>
+    <input type="text" id="contractView" name="contract" ng-model="contact.contract" /></div>
+  </div>
+    <div class="row">
+      <div class="col-md-2"><label for="signMfg">Sign MFG:</label>
+      <input type="text" id="signMfgView" name="signMfg" ng-model="contact.signMfg" /></div>
+      <div class="col-md-2"><label for="signSize">Sign Size:</label>
+      <input type="text" id="signSizeView" name="signSize" ng-model="contact.signSize" /></div>
+      <div class="col-md-2"><label for="signHold">Sign Hold Time:</label>
+      <input type="text" id="holdView" name="signHold" ng-model="contact.signHold" /></div>
+    </div>
+    <div class ="row">
+      <div class="col-md-8"><textarea type="text" id="notesView" name="contactNotes" ng-model="contact.contactNotes"></textarea></div>
+    </div>
+    <div class ="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-1"><button class="update" ng-click="updateContact(contact)">Update Contact</button></div>
+      <div class="col-md-4"></div>
+      <div class="col-md-1"><button class="delete" ng-click="deleteContact(contact)">Delete Contact</button></div>
+  </div>
+</form>
+
+</div>
+</div>

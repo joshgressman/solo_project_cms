@@ -1,5 +1,6 @@
 body {
 background-color: #F2F2F2;
+
 }
 
 .big {
@@ -12,15 +13,18 @@ background-color: #F2F2F2;
 header {
   height: 120px;
   background-color: gray;
-  margin-bottom: 140px;
+  margin-bottom: 80px;
 }
 
 #planner {
-  margin-left:730px;
+  /*margin-left:550px;*/
   margin-top: 40px;
   background-color: rgb(37,141,254);
   height: 200px;
   width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .nav {
@@ -50,17 +54,19 @@ header {
 }*/
 
 #addContainer {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 
 
 #contactDiv {
-  border: solid white;
+  border: solid gray;
   border-width: thin;
   border-radius: 2px;
   margin: 10px 0 6px 0;
-  padding-bottom: 8px;
+  padding: 8px 0 8px 8px;
+  margin-left: 10px;
+
 }
 
 #emailView {
@@ -68,13 +74,19 @@ header {
 }
 
 #notesView {
-  width: 1000px;
-  height: 100px;
+  width: 1200px;
+  height: 140px;
   margin-top: 15px;
 }
 
 .delete {
-  background-color:red;
+  background-color:rgb(217,83,79);
+  color: white;
+}
+
+.update {
+  background-color: rgb(92,184,92);
+  color:white;
 }
 
 #addbtn {
@@ -84,4 +96,12 @@ header {
 
 a{
   color: white;
+}
+
+#eventNote {
+  width: 400px;
+}
+
+#topBtn {
+  margin-bottom: 10px;
 }

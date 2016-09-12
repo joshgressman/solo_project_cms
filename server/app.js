@@ -8,6 +8,8 @@ var mongoose = require('mongoose');
 
 var index = require('./routes/index');
 var contacts = require('./routes/contacts');
+var prospect = require('./routes/prospect');
+var inactive = require('./routes/inactive');
 /**----------------- MIDDLEWARE ------------------------------**/
 app.use(express.static(path.join(__dirname, './public')));
 app.use(bodyParser.json());
@@ -15,6 +17,8 @@ app.use(bodyParser.json());
 /**----------------- EXPRESS ROUTES ------------------------------**/
 app.use('/', index);
 app.use('/contacts', contacts);
+app.use('/prospect', prospect);
+app.use('/inactive', inactive);
 /**----------------- MONGOOSE CONNECTION ------------------------------**/
 var databaseUri = 'mongodb://localhost:27017/soloproject';
 

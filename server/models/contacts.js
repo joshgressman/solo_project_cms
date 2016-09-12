@@ -1,6 +1,7 @@
 //Schema set up
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
+// var Event = require('./events').schema;
 
 var contactSchema = new Schema({
   contactName: {type: String, required: true, unique: true},
@@ -21,7 +22,7 @@ var contactSchema = new Schema({
   trialExpiration: {type: Date},
   ProjectedIncome: {type: Number},
   currentDate: {type: Date}
-
+  // events:[{eventDate:{type: Date}}, {eventType:{type:String}}, {eventNote:{type:String}}]
 });
 
 var contacts = mongoose.model('contacts', contactSchema);

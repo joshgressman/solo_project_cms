@@ -5,7 +5,7 @@ var router = express.Router();
 
 //********ROUTES TO SCHEME FILE ************////
 var Contacts = require('../models/contacts');
-
+// var Events = require('../models/events');
 ///////*************POST CONTACTS TO DATABSE****************////////
 router.post('/', function(req,res){
 console.log('POST', req.body);
@@ -22,7 +22,7 @@ contact.save(function(err){
 
 ///****************GET CONTACTS**************************//////
 router.get('/', function(req, res){
-Contacts.find({}, function(err, contacts){
+Contacts.find({contactType:"client"}, function(err, contacts){
   if(err){
     res.sendStatus(500);
     return;
@@ -57,6 +57,9 @@ router.delete('/:id', function(req, res){
     res.sendStatus(204);
   });
 });
+
+///////************************EVENT POST **************************////
+
 
 
 module.exports = router;
