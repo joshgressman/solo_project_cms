@@ -1,7 +1,15 @@
 var express = require('express');
 var router = express.Router();
 var path = require('path');
+var passport = require('passport');
 
+//Handles login from POST from index.html
+router.post('/',
+    passport.authenticate('local', {
+        successRedirect: '#home', //'/views/partials/home.html',
+        failureRedirect: '#fail', //'/views/partials/failure.html'
+    })
+);
 
 
 
