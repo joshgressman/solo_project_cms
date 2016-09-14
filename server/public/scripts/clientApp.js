@@ -1,8 +1,6 @@
 //this will handle the #routes
 var myApp = angular.module('myApp', ['ngRoute']);
 
-//need to add the links to the new pages with controllers
-
 //page routing
 myApp.config(['$routeProvider', function($routeProvider){
   $routeProvider
@@ -26,24 +24,8 @@ myApp.config(['$routeProvider', function($routeProvider){
       templateUrl: '/views/partials/inactive.html',
       controller: "inactiveController"
     })
-    .when('/login', {
-      templateUrl: '/views/partials/login.html',
-      controller: "loginController"
-    })
-    .when('/register', {
-      templateUrl: '/views/partials/register.html',
-      controller: "registerController"
-    })
-    .when('/user', {
-      templateUrl: '/views/partials/user.html',
-      controller: "UserController"
-    })
-    .when('/fail', {
-      templateUrl: '/views/partials/failure.html',
-      controller: "failureController"
-    })
     .otherwise({
-      redirectTo: '/login' //use this to send to login was '/home'
+      redirectTo: '/home'
     })
 
 }]);
