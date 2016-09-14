@@ -11,10 +11,28 @@ background-color: #F2F2F2;
 }
 
 header {
-  height: 120px;
-  background-color: gray;
-  margin-bottom: 80px;
+  height: 100px;
+  background-color: black;
+  margin-bottom: 40px;
+  padding-left: 25px;
+  border-bottom: solid rgb(37,141,254);
+  border-width: thick;
 }
+
+.header_image {
+  background: url("/images/logo.png") no-repeat;
+  background-size: 140px 80px;
+    float: left;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+
+
+
+}
+
+
 
 #planner {
   /*margin-left:550px;*/
@@ -95,11 +113,15 @@ header {
 }
 
 a{
-  color: white;
+  color: black;
 }
 
 
 
 #topBtn {
   margin-bottom: 10px;
+}
+
+.container {
+  margin-bottom: 80px;
 }

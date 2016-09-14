@@ -24,6 +24,14 @@ myApp.config(['$routeProvider', function($routeProvider){
       templateUrl: '/views/partials/inactive.html',
       controller: "inactiveController"
     })
+    .when('/register', {
+      templateUrl: '/views/partials/register.html',
+      controller: "LoginController"
+    })
+    .when('/login', {
+      templateUrl: '/views/partials/login.html',
+      controller: "LoginController"
+    })
     .otherwise({
       redirectTo: '/home'
     })
