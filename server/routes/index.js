@@ -7,7 +7,7 @@ router.post('/',
     passport.authenticate('local', {
         // request stays within node/express and is routed as a new request
         successRedirect: '#home',   // goes to routes/user.js
-        failureRedirect: '../public/views//failure.html'       // goes to get '/' route below
+        failureRedirect: '#failure'       // goes to get '/' route below
     })
 );
 

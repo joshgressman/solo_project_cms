@@ -32,6 +32,10 @@ myApp.config(['$routeProvider', function($routeProvider){
       templateUrl: '/views/partials/login.html',
       controller: "LoginController"
     })
+    .when('/failure', {
+      templateUrl: '/views/partials/failure.html',
+      controller: "failureController"
+    })
     .otherwise({
       redirectTo: '/home'
     })

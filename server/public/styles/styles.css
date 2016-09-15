@@ -1,6 +1,16 @@
 body {
 background-color: #F2F2F2;
+color:black;
+           font-family: "Times New Roman", Times, serif;
+           /*background-image: url("/images/Background.jpg");
+           opacity: 1.0;
+           background-position: top left;
+           background-repeat: repeat;*/
 
+}
+
+.lead {
+  font-size: 2.0em;
 }
 
 .big {
@@ -125,3 +135,7 @@ a{
 .container {
   margin-bottom: 80px;
 }
+
+/*#passinput{
+  margin-left: 40px;
+}*/

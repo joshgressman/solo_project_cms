@@ -21,6 +21,7 @@ myApp.controller('LoginController', ['$scope', '$http', '$location', function($s
           } else {
             console.log('failure: ', response);
             $scope.message = "Wrong!";
+            // $location.path('#failure'); //was user
           }
         });
       }
