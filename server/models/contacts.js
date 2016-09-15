@@ -21,7 +21,9 @@ var contactSchema = new Schema({
   salesRep:String,
   trialExpiration: {type: Date},
   ProjectedIncome: {type: Number},
-  currentDate: {type: Date}
+  currentDate: {type: Date},
+  income: {type: Number},
+  contractExp: String,
   // events:[{eventDate:{type: Date}}, {eventType:{type:String}}, {eventNote:{type:String}}]
 });
 
