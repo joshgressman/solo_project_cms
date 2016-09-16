@@ -8,6 +8,16 @@ $scope.formData = {};
 console.log("scope contacts", $scope.contacts);
 getProspect();
 
+$http.get('/home').then(function(response) {
+    if(response.data.username) {
+        // user has a curret session on the server
+        $scope.userName = response.data.username;
+        console.log('User Data: ', $scope.userName);
+    } else {
+        // user has no session, bounce them back to the login page
+        $location.path("/login"); //was home
+    }
+});
 
 //GET clients from the DB
 function getProspect () {

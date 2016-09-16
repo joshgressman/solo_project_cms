@@ -3,8 +3,19 @@ myApp.controller('addController', ['$scope', '$http', '$location', function($sco
 $scope.newContact = {} // single contact to be added to DB
 $scope.message = '';
 
-//**********ADD CONTACT FUNCTION ON SUBMIT
+/////*****************VERIFY IF LOGGED IN*******************///////
+$http.get('/home').then(function(response) {
+    if(response.data.username) {
+        // user has a curret session on the server
+        $scope.userName = response.data.username;
+        console.log('User Data: ', $scope.userName);
+    } else {
+        // user has no session, bounce them back to the login page
+        $location.path("/login"); //was home
+    }
+});
 
+//**********ADD CONTACT FUNCTION ON SUBMIT
 $scope.submitNewContact = function () {
 var data = $scope.newContact;
 $http.post('/contacts', data)

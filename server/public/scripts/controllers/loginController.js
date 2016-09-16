@@ -13,7 +13,7 @@ myApp.controller('LoginController', ['$scope', '$http', '$location', function($s
       } else {
         console.log('sending to server...', $scope.user);
         $http.post('/', $scope.user).then(function(response) {
-          if(response.status == 200) { //response.data.username 
+          if(response.status == 200) { //response.data.username
             // console.log('success: ', response.data);
             // location works with SPA (ng-route)
             console.log('redirecting to user page');
