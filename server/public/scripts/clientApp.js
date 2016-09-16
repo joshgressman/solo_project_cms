@@ -26,7 +26,7 @@ myApp.config(['$routeProvider', function($routeProvider){
     })
     .when('/register', {
       templateUrl: '/views/partials/register.html',
-      controller: "LoginController"
+      controller: "registerController"
     })
     .when('/login', {
       templateUrl: '/views/partials/login.html',
