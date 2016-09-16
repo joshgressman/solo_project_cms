@@ -30,6 +30,10 @@ header {
   border-width: thick;
 }
 
+footer {
+  height: 100px;
+}
+
 .header_image {
   background: url("/images/logo.png") no-repeat;
   background-size: 140px 80px;
@@ -113,9 +117,18 @@ header {
   color: white;
 }
 
+.delete:hover {
+
+  background-color: red;
+}
+
 .update {
-  background-color: rgb(92,184,92);
+  background-color: rgb(37,141,254);
   color:white;
+}
+
+.update:hover {
+  background-color: rgb(92,184,92);
 }
 
 #addbtn {
@@ -143,4 +156,10 @@ a{
 
 #logout {
   margin-left: 130px;
+}
+
+.register  {
+  margin-top: 50px;
+  margin-left:645px;
+
 }
